@@ -1,4 +1,4 @@
-data = [
+[
     {
         "name":"Union Square",
         "text":"Originally a sand dune, in 1850, the Union Square area was turned into a public park and monument to the sailors in the US Navy. One of the first pieces of public property in San Francisco, Union Square is a popular hub for weddings, conventions, dining, and nightlife. A lesser known fact about the square is that the final confirmed murder by the Zodiac killer was heavily believed to have been initiated here. The leading theory is that taxi driver Paul Lee Stine picked up an unnamed man around the Union Square area and his body was found an hour later in Presidio Heights.",
@@ -60,21 +60,3 @@ data = [
         "img":""
     }
 ]
-
-var map = L.map('map', {attributionControl: false}).setView([37.78755, -122.40661], 15);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    id:'mapbox/dark-v10'
-}).addTo(map);
-
-const clickMap = new Map()
-
-for (var i = 0; i < data.length; i++) {
-    var marker = L.marker(data[i].coords).addTo(map)
-    clickMap.set(data[i].name, marker)
-}
-// var marker = L.marker([37.78755, -122.40661]).addTo(map);
-// L.marker([51.9, -0.1]).addTo(map);
-// marker.bindPopup("<b>Hello world!</b><br>I am a popup.").bindPopup();
-
