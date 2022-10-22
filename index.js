@@ -73,8 +73,13 @@ const clickMap = new Map()
 for (var i = 0; i < data.length; i++) {
     var marker = L.marker(data[i].coords).addTo(map)
     clickMap.set(data[i].name, marker)
-}
-// var marker = L.marker([37.78755, -122.40661]).addTo(map);
-// L.marker([51.9, -0.1]).addTo(map);
-// marker.bindPopup("<b>Hello world!</b><br>I am a popup.").bindPopup();
 
+    document.getElementById("scroll").appendChild(generate_card(data[i].name, "dabbing"))
+}
+
+function generate_card(location, text) {
+    const card = document.createElement('div')
+    card.setAttribute('class', 'card')
+    card.innerHTML = `<h2>${location}</h2><p>${text}</p>`
+    return card
+}

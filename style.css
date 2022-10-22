@@ -8,28 +8,41 @@ body {
     background-color: #121212;
 }
 
+.container {
+    display: flex;
+}
+
 .app {
     padding: 3vh 5vw;
 }
 
 #map {
     height: 50vh;
+    border-radius: 17px;
 }
 
 #scroll {
     margin-top: 3vh;
-    display: flex;
     overflow-x: auto;
+    display: flex;
 }
 
 #scroll::-webkit-scrollbar {display: none;}
 
-.marker {
-    height: 30vh;
+.card {
+    height: 35vh;
     min-width: 20%;
     width:20%;
     margin: 0rem 0.5rem;
     background-color: white;
     padding: 1rem;
     border-radius: 17px;
+}
+
+.card:first-of-type {
+    margin-left: 0;
+}
+
+.card:last-of-type {
+    margin-right: 0;
 }
