@@ -74,7 +74,7 @@ for (var i = 0; i < data.length; i++) {
     var marker = L.marker(data[i].coords).addTo(map)
     clickMap.set(data[i].name, marker)
 
-    document.getElementById("scroll").appendChild(generate_card(data[i].name, "dabbing"))
+    document.getElementById("scroll").appendChild(generate_card(data[i].name, data[i].text))
 }
 
 function generate_card(location, text) {
