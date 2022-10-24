@@ -83,7 +83,7 @@ for (var i = 0; i < data.length; i++) {
 
 function generate_card(location, text, id) {
     const card = document.createElement('div')
-    var color = coolers[Math.floor(Math.random() * (coolers.length-1))]
+    var color = coolers[Math.floor(Math.random() * (coolers.length))]
     card.setAttribute('class', 'card')
     card.innerHTML = `<div class="card-face card-face-front card-${color}">
                         <div class="card-image" id="card-${id}"></div>
