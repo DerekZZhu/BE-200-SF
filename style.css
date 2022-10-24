@@ -57,7 +57,6 @@ h1 {
 }
 
 .card-face {
-    background-color: orangered;
     color: white;
     height: 100%;
     transition: all .8s ease;
@@ -98,15 +97,33 @@ h1 {
 .card-image {
     border-radius: 4px;
     background-size: cover;
+    background-position: center;
+    /* background-size: 100% 100%; */
     height: 15rem;
+}
+
+.card-red {
+    background-image: linear-gradient(to right bottom, #E74856, #EA005E);
+}
+
+.card-orange {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+
+.card-yellow {
+    background-image: linear-gradient(to right bottom, #FDE047, #EAB308);
 }
 
 .card-green {
     background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
-.card-orange {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+.card-blue {
+    background-image: linear-gradient(to right bottom, #22D3EE, #0EA5E9);
+}
+
+.card-indigo {
+    background-image: linear-gradient(to right bottom, #818CF8, #8B5CF6);
 }
 
 .card-purple {
