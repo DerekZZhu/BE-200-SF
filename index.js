@@ -61,6 +61,9 @@ data = [
     }
 ]
 
+const primary_colors = ["7ed56f", "#ffb900", "#2998ff"]
+const secondary_colors = ["#28b485", "#ff7730", "#5643fa"]
+
 var map = L.map('map', {attributionControl: false}).setView([37.78755, -122.40661], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -77,9 +80,9 @@ for (var i = 0; i < data.length; i++) {
     document.getElementById("scroll").appendChild(generate_card(data[i].name, data[i].text))
 }
 
-function generate_card(location, text) {
-    const card = document.createElement('div')
-    card.setAttribute('class', 'card')
-    card.innerHTML = `<h2>${location}</h2><p>${text}</p>`
-    return card
-}
+// function generate_card(location, text) {
+//     const card = document.createElement('div')
+//     card.setAttribute('class', 'card')
+//     card.innerHTML = `<h2>${location}</h2><p>${text}</p>`
+//     return card
+// }

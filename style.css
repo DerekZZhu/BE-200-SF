@@ -8,6 +8,15 @@ body {
     background-color: #121212;
 }
 
+h1 {
+    color: white;
+    text-align: center;
+}
+
+/* .leaflet-tile {
+    -webkit-filter: hue-rotate(180deg) invert(100%);
+} */
+
 .container {
     display: flex;
 }
@@ -23,20 +32,55 @@ body {
 
 #scroll {
     margin-top: 3vh;
+    padding: 1rem 0;
     overflow-x: auto;
     display: flex;
 }
 
 #scroll::-webkit-scrollbar {display: none;}
+/* .card::-webkit-scrollbar {display: none;}
 
 .card {
+    
+    overflow-y: auto; */
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
     height: 35vh;
     min-width: 20%;
-    width:20%;
-    margin: 0rem 0.5rem;
-    background-color: white;
+    width:25%;
+}
+
+.card-face {
+    background-color: orangered;
+    color: white;
+    height: 15rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 7px;
     padding: 1rem;
-    border-radius: 17px;
+}
+
+.card-face-front {
+    background-color: orangered;
+}
+
+.card-face-back {
+    transform: rotateY(180deg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.card:hover .card-face-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-face-back {
+    transform: rotateY(0deg);
 }
 
 .card:first-of-type {
@@ -45,4 +89,9 @@ body {
 
 .card:last-of-type {
     margin-right: 0;
+}
+
+.card-image {
+    background-size: cover;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwhc.unesco.org%2Fen%2Flist%2F252%2F&psig=AOvVaw32r_QCi5PZJggR2nUqQ-br&ust=1666666396405000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCq1aXu9_oCFQAAAAAdAAAAABAE');
 }
