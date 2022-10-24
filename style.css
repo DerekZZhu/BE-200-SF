@@ -95,8 +95,7 @@ h1 {
 
 .card-image {
     background-size: cover;
-    height: 10rem;
-    background-image: url('https://amymhaddad.s3.amazonaws.com/morocco-blue.png');
+    height: 15rem;
 }
 
 .card-green {
