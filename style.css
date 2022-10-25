@@ -40,11 +40,8 @@ h1 {
 }
 
 #scroll::-webkit-scrollbar {display: none;}
-/* .card::-webkit-scrollbar {display: none;}
+.card-face-back::-webkit-scrollbar {display: none;}
 
-.card {
-    
-    overflow-y: auto; */
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -57,9 +54,14 @@ h1 {
 }
 
 @media (max-width: 480px) {
+    h2 {
+        font-size: 0.8rem;
+    }
+
     .card {
         min-width: 50%;
         width:50%;
+        height: 90%;
     }
 }
 
@@ -83,6 +85,7 @@ h1 {
 
 .card-face-back {
     transform: rotateY(180deg);
+    overflow-y: auto;
 }
 
 .card:hover .card-face-front {

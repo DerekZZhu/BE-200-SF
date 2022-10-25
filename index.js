@@ -12,7 +12,7 @@ data = [
         "img":"https://cache.marriott.com/content/dam/marriott-renditions/SFOLC/sfolc-exterior-9282-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*"
     },
     {
-        "name":"Twitch",
+        "name":"Twitch HQ",
         "text":"This 9 floor office building is the headquarters of one of the largest streaming services across the US. Surrounded by restaurants and other STEM oriented facilities, the Twitch building serves as a small reminder of the socio-technological powerhouses that are housed in Silicon Valley. Another fun fact is that Emmett Shear, the co-founder of Twitch was a UW early entrance student before dropping out to attend Yale and inevitably starting twitch.",
         "coords":[37.791, -122.40335],
         "img":"https://media.istockphoto.com/photos/twitch-headquarters-in-the-downtown-area-san-francisco-picture-id1170647545?k=20&m=1170647545&s=170667a&w=0&h=4bL4TVmaCMW2gUgysVv6ChkmHs1CwkDo6nUn5pe9exI="
@@ -24,7 +24,7 @@ data = [
         "img":"https://cdn.vox-cdn.com/thumbor/gzW2LyNrDLOzm0-ORkWPSekbfok=/0x715:7000x4380/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19773801/shutterstock_1006629742.jpg"
     },
     {
-        "name":"Intersection of Grant Ave and California St.",
+        "name":"Grant Ave and California St.",
         "text":"Did you know that the United States had an emperor? Joshua Norton, a famed resident of San Francisco, declared himself to be the Emperor of the US in 1859. While wielding no real power, the people of SF treated him as a king and his wild antics (he called for the dissolution of the US and printed currency of himself) cemented a long lasting legacy that inspired authors like Mark Twain and Robert Stevenson. In 1880, Norton up and died at the intersection of Grant Avenue and California Street.",
         "coords":[37.79249, -122.40596],
         "img":"https://live.staticflickr.com/8525/8581057667_a8bb0983b3_b.jpg"
@@ -70,12 +70,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     id:'mapbox/dark-v10'
 }).addTo(map);
 
-const hoverMap = new Map()
+const markerMap = new Map()
 const panMap = new Map()
 
 for (var i = 0; i < data.length; i++) {
     var marker = L.marker(data[i].coords).addTo(map)
-    hoverMap.set(i, marker)
+    markerMap.set(i, marker)
     panMap.set(i, data[i].coords)
 
     document.getElementById("scroll").appendChild(generate_card(data[i].name, data[i].text, i))
@@ -98,8 +98,9 @@ function generate_card(location, text, id) {
                         </p>
                       </div>`
     card.addEventListener("mouseover", function(e){
-        var coords = (panMap.get(parseInt(e.target.getAttribute('id').replace(/\D/g,''))));
-        map.flyTo(coords, 17)
+        var index = parseInt(e.target.getAttribute('id').replace(/\D/g,''));
+        map.flyTo(panMap.get(index), 17)
+        console.log(markerMap.get(index))
     })
     return card
 }
