@@ -70,14 +70,16 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     id:'mapbox/dark-v10'
 }).addTo(map);
 
-const clickMap = new Map()
+const hoverMap = new Map()
+const panMap = new Map()
 
 for (var i = 0; i < data.length; i++) {
     var marker = L.marker(data[i].coords).addTo(map)
-    clickMap.set(data[i].name, marker)
+    hoverMap.set(i, marker)
+    panMap.set(i, data[i].coords)
 
     document.getElementById("scroll").appendChild(generate_card(data[i].name, data[i].text, i))
-    const image = document.getElementById(`card-${i}`)
+    const image = document.getElementById(`card-image-${i}`)
     image.style.backgroundImage = `url('${data[i].img}')`
 }
 
@@ -85,14 +87,19 @@ function generate_card(location, text, id) {
     const card = document.createElement('div')
     var color = coolers[id%coolers.length]
     card.setAttribute('class', 'card')
-    card.innerHTML = `<div class="card-face card-face-front card-${color}">
-                        <div class="card-image" id="card-${id}"></div>
-                        <h2>${location}</h2>
+    card.setAttribute('id', `${id}`)
+    card.innerHTML = `<div class="card-face card-face-front card-${color}" id="${id}">
+                        <div class="card-image" id="card-image-${id}"></div>
+                        <h2 id="${id}">${location}</h2>
                       </div>
-                      <div class="card-face card-face-back card-${color}">
-                        <p class="card-details">
+                      <div class="card-face card-face-back card-${color}" id="${id}">
+                        <p class="card-details" id="${id}">
                             ${text}
                         </p>
                       </div>`
+    card.addEventListener("mouseover", function(e){
+        var coords = (panMap.get(parseInt(e.target.getAttribute('id').replace(/\D/g,''))));
+        map.flyTo(coords, 17)
+    })
     return card
 }
