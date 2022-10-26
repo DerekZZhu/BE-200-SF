@@ -139,3 +139,8 @@ h1 {
 .card-purple {
     background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
+
+.source {
+    color: white;
+    font-size: 1.5rem;
+}
