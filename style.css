@@ -76,6 +76,9 @@ body::-webkit-scrollbar {display: none;}
     padding: 0.5rem;
 }
 
+.card-details {
+    margin: 0;
+}
 .card-face-front {
     background-color: orangered;
 }
