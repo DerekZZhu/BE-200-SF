@@ -41,6 +41,7 @@ h1 {
 
 #scroll::-webkit-scrollbar {display: none;}
 .card-face-back::-webkit-scrollbar {display: none;}
+body::-webkit-scrollbar {display: none;}
 
 .card {
     perspective: 150rem;

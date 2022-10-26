@@ -99,7 +99,7 @@ function generate_card(location, text, id) {
                       </div>`
     card.addEventListener("mouseover", function(e){
         var index = parseInt(e.target.getAttribute('id').replace(/\D/g,''));
-        map.flyTo(panMap.get(index), 17)
+        map.flyTo(panMap.get(index), 18)
         console.log(markerMap.get(index))
     })
     return card
