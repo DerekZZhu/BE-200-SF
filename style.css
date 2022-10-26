@@ -14,6 +14,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin: 1rem 0;
+}
+
 /* .leaflet-tile {
     -webkit-filter: hue-rotate(180deg) invert(100%);
 } */
