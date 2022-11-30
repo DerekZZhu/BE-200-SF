@@ -148,3 +148,7 @@ body::-webkit-scrollbar {display: none;}
     color: white;
     font-size: 1.5rem;
 }
+
+.leaflet-control-container .leaflet-routing-container-hide {
+    display: none;
+}

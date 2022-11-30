@@ -103,3 +103,16 @@ function generate_card(location, text, id) {
     })
     return card
 }
+
+for(var i = 0; i < data.length -1; i++) {
+    let loc1 = data[i].coords
+    let loc2 = data[i+1].coords
+    L.Routing.control({
+        waypoints: [
+            L.latLng(loc1[0], loc1[1]),
+            L.latLng(loc2[0], loc2[1])
+        ],
+        show:false,
+        createMarker: function() { return null; }
+    }).addTo(map);
+}

@@ -2,27 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-    crossorigin=""></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>San Francisco Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Main Page</title>
 </head>
 <body>
-    <div class="app">
-        <h1>San Francisco Walk</h1>
-        <div id="map"></div>
-        <div id="scroll">
+    <header class="center">
+        <div>
+            <h1>Historic City</h1>
+            <p>Derek Zhu, Brian Su, Ashley Ding</p>
         </div>
-        <a href="sources.html" class="source">Sources</a>
-    </div>
-    <script src="index.js"></script>
+    </header>
+    
+    <section class="center">
+        <div class="overlay">
+            <div class="center">
+                <div class="portal" id="san-fran">
+                    <h2 class="cityname">San Francisco, United States</h2>
+                </div>
+            </div>
+            <div class="info">
+                <h2>History and the Built Environment</h2>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="center">
+                <div class="portal" id="xiamen">
+                    <h2 class="cityname">Xiamen, China</h2>
+                </div>
+            </div>
+            <div class="info">
+                <h2>Historical Preservation</h2>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="center">
+                <div class="portal" id="london">
+                    <h2 class="cityname">London, United Kingdom</h2>
+                </div>
+            </div>
+            <div class="info">
+                <h2>The Roles that Historical Buildings Play</h2>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
