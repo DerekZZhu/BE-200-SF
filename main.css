@@ -15,18 +15,21 @@ h1 {
     font-weight: 400;
     letter-spacing: 10px;
     margin-bottom: 1rem;
-    margin-top: 0;
+}
+
+h2 {
+    font-size: 1em;
 }
 
 section {
     height: 75rem;
-    padding: 0 4rem;
+    padding: 0 auto;
     flex-direction: column;
 }
 
 .overlay {
     height: 20rem;
-    width: 75%;
+    width: 90%;
     margin-bottom: 1rem;
     padding: 1rem;
     background-color: rgb(33, 33, 33);
@@ -50,6 +53,7 @@ section {
 
     display: flex;
     align-items: flex-end;
+    margin: 0.5em;
 }
 
 .center {
@@ -99,5 +103,27 @@ section {
 }
 
 .cityname {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .overlay {
+        width: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h2 {
+        font-size: 1.5em;  
+    }
+
+    .overlay {
+        width: 70%;
+    }
 }
