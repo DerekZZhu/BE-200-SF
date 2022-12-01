@@ -1,7 +1,12 @@
 body {
     background-color: #121212;
+    margin-top: 2rem;
     font-family: Lato;
     -ms-overflow-style:none;
+}
+
+section {
+    margin-top: .5rem;
 }
 
 ::-webkit-scrollbar {
