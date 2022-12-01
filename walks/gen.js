@@ -4,7 +4,8 @@ var map = L.map('map', {attributionControl: false}).setView([37.78755, -122.4066
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    id:'mapbox/dark-v10'
+    id:'mapbox/dark-v10',
+    keyboard: false
 }).addTo(map);
 
 const markerMap = new Map()
