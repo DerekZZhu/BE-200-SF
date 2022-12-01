@@ -49,7 +49,7 @@ section {
     width: 75%;
 
     display: flex;
-    align-items: flex-end
+    align-items: flex-end;
 }
 
 .center {
@@ -58,10 +58,24 @@ section {
     align-items: center;
 }
 
+.portal:hover {
+    transform: scale(1.03);
+    transition: all .2s ease-in-out;
+}
+
+.portal:not(:hover) {
+    transform: scale(1.00);
+    transition: all .2s ease-in-out;
+}
+
 #san-fran {
     background-image: linear-gradient(180deg, rgba(0,0,0,0), #121212), url('https://media.istockphoto.com/id/476881195/photo/bay-bridge-and-san-francisco-skyline-at-sunset.jpg?s=612x612&w=0&k=20&c=dBeGdmYS8eOufXGT_YdRkuvKfLKUHFYwVaL9gHbkSXo=');
     background-position: center;
     background-size: cover;
+}
+
+#san-fran:hover{
+    background-image: url('https://media.istockphoto.com/id/476881195/photo/bay-bridge-and-san-francisco-skyline-at-sunset.jpg?s=612x612&w=0&k=20&c=dBeGdmYS8eOufXGT_YdRkuvKfLKUHFYwVaL9gHbkSXo=');
 }
 
 #xiamen {
@@ -70,10 +84,18 @@ section {
     background-size: cover;
 }
 
+#xiamen:hover{
+    background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/18/c3/af.jpg')
+}
+
 #london {
     background-image: linear-gradient(180deg, rgba(0,0,0,0), #121212), url('https://media.istockphoto.com/id/1313895046/photo/panoramic-aerial-view-to-the-illuminated-cityscape-of-london.jpg?b=1&s=170667a&w=0&k=20&c=wnuvWQIzwlGWLweXcmEcLPDrlDnsHkMc0JVggRZNhwA=');
     background-position: center;
     background-size: cover;
+}
+
+#london:hover{
+    background-image: url('https://media.istockphoto.com/id/1313895046/photo/panoramic-aerial-view-to-the-illuminated-cityscape-of-london.jpg?b=1&s=170667a&w=0&k=20&c=wnuvWQIzwlGWLweXcmEcLPDrlDnsHkMc0JVggRZNhwA=');
 }
 
 .cityname {
