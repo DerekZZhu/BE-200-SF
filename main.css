@@ -1,6 +1,12 @@
 body {
     background-color: #121212;
     font-family: Lato;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::--webkit-scrollbar {
+    display: none;
 }
 
 header {
@@ -44,6 +50,9 @@ section {
 
 .info {
     text-align: center;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .info > ul {
@@ -52,8 +61,13 @@ section {
 
 li {
     margin-bottom: 1em;
+    font-size: 0.8em;
 }
 
+.info::-webkit-scrollbar {
+    display: none;
+}
+  
 .portal {
     border-radius: 7px;
     height: 90%;
@@ -129,6 +143,10 @@ li {
 @media only screen and (min-width: 992px) {
     h2 {
         font-size: 1.5em;  
+    }
+
+    li {
+        font: 1em;
     }
 
     .overlay {

@@ -1,11 +1,10 @@
 const coolers = ["red", "orange", "yellow", "green", "blue", "purple", "indigo"]
 
-var map = L.map('map', {attributionControl: false}).setView([37.78755, -122.40661], 15);
+var map = L.map('map', {attributionControl: false, keyboard: false}).setView([37.78755, -122.40661], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    id:'mapbox/dark-v10',
-    keyboard: false
+    id:'mapbox/dark-v10'
 }).addTo(map);
 
 const markerMap = new Map()
