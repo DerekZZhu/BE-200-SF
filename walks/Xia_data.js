@@ -25,25 +25,25 @@ data = [
     },
     {
         "name":"Shimao Straits Tower",
-        "text":"Did you know that the United States had an emperor? Joshua Norton, a famed resident of San Francisco, declared himself to be the Emperor of the US in 1859. While wielding no real power, the people of SF treated him as a king and his wild antics (he called for the dissolution of the US and printed currency of himself) cemented a long lasting legacy that inspired authors like Mark Twain and Robert Stevenson. In 1880, Norton up and died at the intersection of Grant Avenue and California Street.",
+        "text":"As you can see, this is a pair of modern twin towers growing from the old city center, what we call today Xiamen's city landmarks. Interestingly, the towers have the best geographical location, in how they are by the shoreline, providing a splendid vision overlooking the ocean. Moverover, it was built just alongside the old fishing port Shapowei, the city's new sub-culture and art center. The combination of both would bring and have already brought amazing effects and vitalities.",
         "coords":[24.435587,118.08955],
         "img":"https://upload.wikimedia.org/wikipedia/commons/9/99/Xiamen_Shimao_Straits_Tower_at_dusk.jpg"
     },
     {
         "name":"Xiamen University",
-        "text":"The Wells Fargo Museum is a very modern building on the outside but when you enter you’ll be greeted by relics of the company’s past. Wells Fargo is well known for its financial power and economic staple and to glimpse a view of how far they have come the museum represents just one of the ways the city stays in touch with its rich history. On a more obscure tidbit of history, a self proclaimed “reincarnation of first president George Washington” named Frederick Coombs is stated to have walked the Montgomery Street (which the museum is on).",
+        "text":"Founded in 1921 by the renowned patriotic overseas Chinese leader Mr. Tan Kah Kee, the university has been perennially regarded as one of the top academic institutions in Southern China. It had also been the most important and foremost higher education institution in Fujian and Xiamen, bringing top-tier knowledge and technologies here to the public for the first time back in the early 20th century.",
         "coords":[24.4386738,118.091013],
         "img":"https://en.xmu.edu.cn/_upload/article/images/8e/13/cd37ad4e4b4b9ab803426a36820b/83d95ea3-67d5-47d7-98c3-5e26aefe37e2.jpg"
     },
     {
         "name":"South Putuo Temple",
-        "text":"Built in 1983, 101 California is a sleek multi-faceted skyscraper with 32 elevators (what the hell???). Housing multiple financial institutions like Morgan Stanley and Invesco, 101 California is known as one of the largest and most prominent business centers at the heart of San Francisco’s financial district. A fact many forget though is that 101 California was at the heart of a mass shooting in 1993. After 8 fatalities and 6 wounded, the 101 California Street shooting would push for California to ban assault rifles in the state.",
+        "text":"Built during the Tang dynasty (618-917 AD), the South Putuo Temple is one of the oldest buddhist temples in the province Fujian. Located in the southeast of Xiamen Island, it is surrounded by the sea and the Wulao Peaks, a small mountain range that rises on the island. The temple was named after the famous Buddhist mountain in Zhejiang called Putuo and provides insights on the history and evolution of people's religious faith since Tang.",
         "coords":[24.4686099,118.0793666],
         "img":"https://images.chinahighlights.com/2014/01/south_putuo_templef9805922b168_cut_800x500_70.jpg"
     },
     {
         "name":"Hulishan Cannon Fort",
-        "text":"Constructed in 1972 the Transamerica Redwood Park is named after the 80 redwood trees from the Santa Cruz Mountains. Hidden within the park is a plaque dedicated to two dogs named Bummer and Lazarus. These two dogs are famed for their rat catching skills in the 1850s and were fan favorites among San Francisco’s denizens.",
+        "text":"Hulishan Cannon Fort is located on the southeastern coast of Xiamen Island. Originally built in Guangxu 20th year (1894) in the Qing Dynasty, it is a result of Qing dynasty's Self-Strengthening Movement and self protection against colonial invasions since the 1840s. The battery houses a 280mm cannon made by the Krupp Arsenal, the largest surviving 19th-century coastal cannon in the world. Its construction combines the architectural style of Europe and Ming and Qing dynasty.",
         "coords":[24.429128,118.105237],
         "img":"https://upload.wikimedia.org/wikipedia/commons/a/a7/Hulishan_Fort_Krupp_artillery_02_20170728.jpg"
     }
