@@ -53,3 +53,13 @@ for(var i = 0; i < data.length -1; i++) {
         createMarker: function() { return null; }
     }).addTo(map);
 }
+
+function recordKeyDown(e) {
+    let pressed = e.keyCode
+    if (pressed === 37) {
+        document.getElementById("scroll").scrollLeft -= 5
+    } else if (pressed === 39) {
+        document.getElementById("scroll").scrollLeft += 5
+    }
+  }
+document.addEventListener("keydown", recordKeyDown);
