@@ -1,11 +1,14 @@
 body {
     background-color: #121212;
     font-family: Lato;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    -ms-overflow-style:none;
 }
 
-body::--webkit-scrollbar {
+::-webkit-scrollbar {
+    display: none;
+}
+  
+::-webkit-scrollbar-button {
     display: none;
 }
 
@@ -134,6 +137,10 @@ li {
         font-size: 1.5em;
     }
 
+    li {
+        font-size: 1em;
+    }
+
     .overlay {
         width: 80%;
     }
@@ -146,7 +153,7 @@ li {
     }
 
     li {
-        font: 1em;
+        font-size: 1em;
     }
 
     .overlay {
