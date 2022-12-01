@@ -46,6 +46,14 @@ section {
     text-align: center;
 }
 
+.info > ul {
+    text-align: left;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
 .portal {
     border-radius: 7px;
     height: 90%;
