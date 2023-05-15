@@ -116,33 +116,7 @@ body::-webkit-scrollbar {display: none;}
     height: 75%;
 }
 
-.card-red {
-    background-image: linear-gradient(to right bottom, #E74856, #EA005E);
-}
 
-.card-orange {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
-}
-
-.card-yellow {
-    background-image: linear-gradient(to right bottom, #FDE047, #EAB308);
-}
-
-.card-green {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-}
-
-.card-blue {
-    background-image: linear-gradient(to right bottom, #22D3EE, #0EA5E9);
-}
-
-.card-indigo {
-    background-image: linear-gradient(to right bottom, #818CF8, #8B5CF6);
-}
-
-.card-purple {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
-}
 
 .source {
     color: white;
